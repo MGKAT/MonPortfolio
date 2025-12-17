@@ -1,4 +1,5 @@
 baseURL: "https://MGKAT.github.io/MonPortfolio/"
+canonifyURLs: true
 languageCode: "fr-fr"
 title: "Portfolio"
 theme: hugo-profile
