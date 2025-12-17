@@ -153,6 +153,7 @@ params:
     content: |-
       Je suis étudiant en 5ᵉ année d'informatique à l' Ecole-IT d'Orléans, spécialisé en Intelligence Artificielle et Data Science. Passionné par l'analyse de données et le machine learning, je m'efforce de transformer des données brutes en informations exploitables pour aider à la prise de décisions éclairées.
       Au cours de mes études, j'ai acquis des compétences solides en programmation, en statistiques et en utilisation d'outils data modernes tels que Python, SQL, ainsi que des bibliothèques de machine learning comme TensorFlow et Scikit-learn.
+      
       enable: true
       title: "Technologies"
       items:
