@@ -1,0 +1,304 @@
+baseURL: "https://MGKAT.github.io/MonPortfolio/"
+languageCode: "fr-fr"
+title: "Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Portfolio"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    image: "/images/profile.jpg"
+    intro: "Bonjour, moi c'est "
+    title: "Klein TENE."
+    subtitle: "Je transforme la donnée en informations exploitables."
+    content: "Etudiant en 5ᵉ année d’informatique, spécialisé en Intelligence Artificielle et Data Science. Je me forme à l’analyse de données, au machine learning et aux outils data modernes, avec un objectif clair : transformer des données en décisions concrètes"
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Télécharger mon CV"
+      url: "/cv.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/MGKAT
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/kleintene/
+      
+  # About
+  about:
+    enable: true
+    title: "A propos"
+    image: "/images/profile.jpg"
+    content: |-
+      Je suis étudiant en 5ᵉ année d'informatique à l' Ecole-IT d'Orléans, spécialisé en Intelligence Artificielle et Data Science. Passionné par l'analyse de données et le machine learning, je m'efforce de transformer des données brutes en informations exploitables pour aider à la prise de décisions éclairées.
+      Au cours de mes études, j'ai acquis des compétences solides en programmation, en statistiques et en utilisation d'outils data modernes tels que Python, SQL, ainsi que des bibliothèques de machine learning comme TensorFlow et Scikit-learn.
+      enable: true
+      title: "Technologies"
+      items:
+        - "Python"              
+        - "SQL"                 
+        - "Scikit-learn"        
+        - "TensorFlow"          
+        - "MySQL"
+        - "Git/GitHub"
+        - "Docker"
+        - "Azure, GCP"
+        - "Streamlit"
+
+  # Education
+  education:
+    enable: true
+    title: "Formation"
+    index: false
+    items:
+      - title: "Mastère Architecture et développement logiciel Spécialité Big Data / Intelligence artificielle"
+        school:
+          name: "Ecole-IT Orléans"
+          url: "https://ecole-it.com/lecole/"
+        date: "2025 - 2026"
+        content: |-
+          Compétences acquises :
+            - Développer des modèles d'Intelligence Artificielle et de Machine Learning pour résoudre des problèmes métiers complexes
+            - Analyser des données massives pour en extraire des insights stratégiques et les communiquer efficacement aux décideurs (reporting, storytelling data)
+            - Concevoir et déployer des architectures Big Data distribuées sur infrastructures cloud avec pipelines de traitement temps réel
+      - title: "BTS Maintenance D'Appareils Biomédicaux"
+        school:
+          name: "ISSBA Cameroun"
+          url: "https://www.issba.cm/"
+        date: "2019 - 2021"
+        content: |-
+          Conception Developpement Installation Production tot equipement des institutions hospitalieres et medicales et des entreprises specialisees
+      
+
+  
+  # Achievements (Certifications)
+  achievements:
+    enable: true
+    title: "Certifications Techniques"
+    items:
+      - title: "Kaggle: Machine Learning & Deep Learning"
+        content: "Maîtrise des algorithmes supervisés (XGBoost, Random Forest) et des réseaux de neurones profonds avec TensorFlow."
+        url: "https://www.kaggle.com/kleintene"
+        image: /images/badges/ml.png 
+
+      - title: "Kaggle: Python & Data Engineering"
+        content: "Manipulation avancée de données (Pandas) et Feature Engineering pour optimiser les performances des modèles."
+        url: "https://www.kaggle.com/kleintene"
+        image: /images/badges/python.png
+
+      - title: "Kaggle: Advanced SQL"
+        content: "Requêtes complexes pour l'extraction de données et gestion de bases de données relationnelles (BigQuery)."
+        url: "https://www.kaggle.com/kleintenec:"
+        image: /images/badges/sql.png
+      
+      - title: "Microsoft Azure AI Fundamentals"
+        content: "Certification officielle validant les connaissances cloud et les services d'IA Azure."
+        url: "https://www.credly.com/..." 
+        image: /images/badges/azure-ai.png
+
+  # projects
+  projects:
+    enable: true
+    title: "Projets"
+    items:
+      - title: NBA Data Pipeline & Analytics Dashboard
+        content: Un pipeline complet "ingestion → validation → transformation → analyse → dashboard Streamlit."
+        image: /images/projects/dashboard.png
+        featured:
+          name: Demo
+          link: https://nba-data-pipeline-4pr.streamlit.app/
+        badges:
+          - "Python"
+          - "Streamlit"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/MGKAT/NBA-Data-Pipeline?tab=readme-ov-file
+         
+      - title: Air Paradise
+        content: Air Paradise est un projet académique combinant Intelligence Artificielle et développement web.
+        image: /images/projects/chatbot.png
+        featured:
+          name: Demo
+          link: https://github.com/MGKAT/AIR_PARADISE-
+        badges:
+          - "Pyhton"
+          - "Jupyter Notebook"
+          - "PHP"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/MGKAT/AIR_PARADISE-
+
+      - title: Eia dashboard
+        content: Un pipeline complet "ingestion → validation → transformation → analyse → dashboard Streamlit."
+        image: /images/projects/streamlit.jpg
+        featured:
+          name: Demo V2
+          link: https://github.com/MGKAT/eia-dashboard
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/MGKAT/eia-dashboard
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contactez-moi"
+    content: Ma boîte de réception est toujours ouverte. Que vous ayez une question ou que vous souhaitiez simplement me dire bonjour, je ferai de mon mieux pour vous répondre !
+    btnName: Contactez-moi
+    btnLink: mailto:kleintene@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    
+    socialNetworks:
+      github: https://github.com/MGKAT
+      linkedin: https://www.linkedin.com/in/kleintene/
+      
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
