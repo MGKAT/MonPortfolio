@@ -53,11 +53,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "https://MGKAT.github.io/MonPortfolio/"
+        run: hugo --gc --minify --baseURL "https://MGKAT.github.io/MonPortfolio/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
