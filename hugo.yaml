@@ -217,6 +217,21 @@ params:
     enable: true
     title: "Projets"
     items:
+     - title: Olist Order Delay Predictor
+       content: Un pipeline Data Science End-to-End : "Engineering SQL (DuckDB) → Split Temporel → Modélisation (Scikit-Learn) → Web App."
+       image: /images/projects/image.png
+       featured:
+         name: Demo
+         link: https://olist-delay-predictor-mgkat.streamlit.app/
+       badges:
+         - "DuckDB"
+         - "Scikit-Learn"
+         - "Streamlit"
+         - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/MGKAT/olist-delay-predictor
+    
       - title: NBA Data Pipeline & Analytics Dashboard
         content: Un pipeline complet "ingestion → validation → transformation → analyse → dashboard Streamlit."
         image: /images/projects/dashboard.png
