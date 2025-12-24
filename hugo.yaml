@@ -212,26 +212,26 @@ params:
         url: "https://www.credly.com/..." 
         image: /images/badges/azure-ai.png
 
-  # projects
+# Projects
   projects:
     enable: true
     title: "Projets"
     items:
-     - title: Olist Order Delay Predictor
-       content: Un pipeline Data Science End-to-End : "Engineering SQL (DuckDB) → Split Temporel → Modélisation (Scikit-Learn) → Web App."
-       image: /images/projects/image.png
-       featured:
-         name: Demo
-         link: https://olist-delay-predictor-mgkat.streamlit.app/
-       badges:
-         - "DuckDB"
-         - "Scikit-Learn"
-         - "Streamlit"
-         - "Python"
+      - title: Olist Order Delay Predictor
+        content: 'Un pipeline Data Science End-to-End : "Engineering SQL (DuckDB) → Split Temporel → Modélisation (Scikit-Learn) → Web App."'
+        image: /images/projects/image.png
+        featured:
+          name: Demo
+          link: https://olist-delay-predictor-mgkat.streamlit.app/
+        badges:
+          - "DuckDB"
+          - "Scikit-Learn"
+          - "Streamlit"
+          - "Python"
         links:
           - icon: fab fa-github
             url: https://github.com/MGKAT/olist-delay-predictor
-    
+      
       - title: NBA Data Pipeline & Analytics Dashboard
         content: Un pipeline complet "ingestion → validation → transformation → analyse → dashboard Streamlit."
         image: /images/projects/dashboard.png
@@ -244,7 +244,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/MGKAT/NBA-Data-Pipeline?tab=readme-ov-file
-         
+          
       - title: Air Paradise
         content: Air Paradise est un projet académique combinant Intelligence Artificielle et développement web.
         image: /images/projects/chatbot.png
@@ -252,7 +252,7 @@ params:
           name: Demo
           link: https://github.com/MGKAT/AIR_PARADISE-
         badges:
-          - "Pyhton"
+          - "Python"
           - "Jupyter Notebook"
           - "PHP"
         links:
@@ -272,7 +272,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/MGKAT/eia-dashboard
-
   #Contact
   contact:
     enable: true
